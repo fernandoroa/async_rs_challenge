@@ -4,8 +4,10 @@ function printDouble(number){
   return new Promise(function(resolve, reject) {
     setTimeout(
       () => {
-        console.log(`${number} * 2`)
-        resolve(number * 2)
+        console.log(`${number} * 2 =`)
+        const result = number * 2
+        console.log(result)
+        resolve()
       }, 
       Math.floor(Math.random() * 100) + 1
     )  
@@ -14,22 +16,15 @@ function printDouble(number){
 console.log("fixed order, using Promise")
 
 printDouble(5)
-.then(result => {
-  console.log(result);
+.then(() => {
   return printDouble(10);
 })
-.then(result => {
-  console.log(result);
+.then(() => {
   return printDouble(22);
 })
-.then(result => {
-  console.log(result);
+.then(() => {
   return printDouble(1);
 })
-.then(result => {
-  console.log(result);
+.then(() => {
   return printDouble(89);
-})
-.then(result => {
-  console.log(result);
 })

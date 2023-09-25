@@ -2,7 +2,7 @@
 function printDouble(number, callback){
   setTimeout(
     () => {
-      console.log(`${number} * 2`)
+      console.log(`${number} * 2 =`)
       console.log(number * 2)
       callback();
     }, 
