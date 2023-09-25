@@ -1,9 +1,15 @@
+
+## Asynchronous functions challenge
+
+Solution for a challenge of the Rocketseat's Launchbase JS course  
+
 ## Source
 
-Translation of part of the challenge:  
+Part of the challenges on the link (original - portuguese):  
 https://github.com/rocketseat-education/bootcamp-launchbase-desafios-06/blob/master/desafios/06-1-mini-desafios.md
 
-### ***Begin of translation:"*** Asynchronous functions
+***Begin of translation:"***
+###  Asynchronous functions
 
 *Case1*  
 
@@ -48,7 +54,8 @@ result = funcao(2, result); // returning 38
 
 Finally, handle this asynchronism again using [callback](https://developer.mozilla.org/docs/Glossary/Callback_function), [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) and [async/await](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/await).
 
-### ***"End of translation***
+### 
+***"End of translation***
 
 ## How to run
 
