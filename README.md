@@ -54,4 +54,4 @@ Finally, handle this asynchronism again using [callback](https://developer.mozil
 
 * Have `node` installed
 * clone this repository
-* In the system console, run `code` followed by the location/name of the file
+* In the system console, run `node` followed by the location/name of the file
