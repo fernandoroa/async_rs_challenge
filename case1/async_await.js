@@ -2,8 +2,10 @@ function printDouble(number){
   return new Promise(function(resolve) {
     setTimeout(
       () => {
-        console.log(`${number} * 2`)
-        resolve(number * 2)
+        console.log(`${number} * 2 =`)
+        const result = number * 2
+        console.log(result)
+        resolve(result)
       }, 
       Math.floor(Math.random() * 100) + 1
     )  
@@ -12,15 +14,10 @@ function printDouble(number){
 console.log("fixed order, using async await")
 
 async function run_print_double_sync() {
-  let result = await printDouble(5);
-  console.log(result); 
-  result = await printDouble(10);
-  console.log(result); 
-  result = await printDouble(22);
-  console.log(result); 
-  result = await printDouble(1);
-  console.log(result); 
-  result = await printDouble(89);
-  console.log(result); 
+  await printDouble(5);
+  await printDouble(10);
+  await printDouble(22);
+  await printDouble(1);
+  await printDouble(89);
 }
 run_print_double_sync()

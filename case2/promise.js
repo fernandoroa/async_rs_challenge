@@ -5,7 +5,9 @@ function printDouble(number, number2){
     setTimeout(
       () => {
         console.log(`${number} * 2 + ${number2} = `)
-        resolve(number * 2 + number2)
+        const result = number * 2 + number2
+        console.log(result)
+        resolve(result)
       }, 
       Math.floor(Math.random() * 100) + 1
     )
@@ -15,21 +17,14 @@ console.log("getting previous result in order with promise")
 
 printDouble(5, 0)
 .then(result => {
-  console.log(result);
   return printDouble(10, result);
 })
 .then(result => {
-  console.log(result);
   return printDouble(22, result);
 })
 .then(result => {
-  console.log(result);
   return printDouble(1, result);
 })
 .then(result => {
-  console.log(result);
   return printDouble(89, result);
-})
-.then(result => {
-  console.log(result);
 })
