@@ -50,7 +50,7 @@ Finally, handle this asynchronism again using [callback](https://developer.mozil
 
 ### ***"End of translation***
 
-### How to run
+## How to run
 
 * Have `node` installed
 * clone this repository
